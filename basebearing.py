@@ -25,6 +25,12 @@ class BaseBearing(BearingConditions):
                 return None
             mat_data = scipy.io.loadmat(filepath)
             
+            # --=== CHAVES DISPONÍVEIS ===--
+            # - Data: <class 'numpy.ndarray'>
+            # - STFTFreq: <class 'numpy.ndarray'>
+            # - STFTTime: <class 'numpy.ndarray'>
+            # - Spectrogram: <class 'numpy.ndarray'>
+            # --===--===--===--===--===--===--===--===
             # print(f"Chaves disponíveis:")
             # for key in mat_data.keys():
             #     if not key.startswith('__'):
